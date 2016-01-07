@@ -6,8 +6,12 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
     <body>
+        <div ng-controller="MovieController as movie">
+            <h1>{{movie.movie.name}} ({{movie.movie.year}})</h1>
+            <p>{{movie.movie.contentRating}} | {{movie.movie.genre}}</p>
+            <h3>{{movie.movie.onlyRating}}</h3>
+        </div>
         <script type="text/javascript" src="angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
-        {{"Cassata, " + "Here I come!"}}
     </body>
 </html>
